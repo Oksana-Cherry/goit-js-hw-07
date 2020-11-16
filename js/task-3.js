@@ -25,7 +25,7 @@ const images = [
   },
 ];
 const imageRef = document.querySelector("#gallery");
-const createGallery = (array) => {
+const createGallery = () => {
     imageRef.classList.add('gallery')
     const imagesTags = ({ url, alt }) => `<li><img class="gallery-link" src='${url}' alt='${alt}'></li>`;
     const gallery = images.map(imagesTags).join(" ");//join(" ")без символов
